@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content;
 using Android.Runtime;
 using Android.Views;
+using Android.Webkit;
 using Android.Widget;
 using Android.OS;
 
@@ -26,6 +27,10 @@ namespace Chsword.XamarinHybrid.Tests
             Button button = FindViewById<Button>(Resource.Id.MyButton);
 
             button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+
+            WebView view = new WebView(this);
+            
+
         }
     }
 }
