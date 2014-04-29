@@ -67,6 +67,12 @@
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chsword.XamarinHybrid\Chsword.XamarinHybrid.csproj">
+      <Project>{83163f1c-87de-44b6-9499-64638384674a}</Project>
+      <Name>Chsword.XamarinHybrid</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
